@@ -17,7 +17,7 @@ def sort_formula_by_label(formula, entry_prototype):
             num_elements,
         )
         listToStr = ' '.join(map(str, sorted_formula))
-        print('Binary:', sorted_formula)
+        print('Binary:', sorted_formula, entry_prototype)
     elif num_elements == 3:
         sorted_formula = sort_ternary_formula_by_label(
             formula,
@@ -25,7 +25,7 @@ def sort_formula_by_label(formula, entry_prototype):
             num_elements,
         )
         listToStr = ' '.join(map(str, sorted_formula))
-        print('Ternary:', sorted_formula)
+        print('Ternary:', sorted_formula, entry_prototype)
     return sorted_formula
 
 def sort_binary_formula_by_label(formula, entry_prototype, element_label_lists, num_elements):
